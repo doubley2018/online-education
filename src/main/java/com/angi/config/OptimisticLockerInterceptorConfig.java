@@ -10,6 +10,10 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class OptimisticLockerInterceptorConfig {
+    /**
+     * 乐观锁拦截器
+     * @return OptimisticLockerInterceptor
+     */
     @Bean
     public OptimisticLockerInterceptor optimisticLockerInterceptor() {
         return new OptimisticLockerInterceptor();
